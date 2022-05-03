@@ -10,4 +10,4 @@ pipeline:
       - mvn -s .m2/settings.xml deploy
     secrets: [ delta_nx_user, delta_nx_pass ]
     when:
-      branch: main
+      branch: master
