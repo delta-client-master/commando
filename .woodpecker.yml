@@ -1,0 +1,13 @@
+pipeline:
+  build:
+    image: maven:3.8.5:eclipse-temurin-11-alpine
+    commands:
+      - mvn -s .m2/settings.xml build
+
+  deploy:
+    image: maven:3.8.5:eclipse-temurin-11-alpine
+    commands:
+      - mvn -s .m2/settings.xml deploy
+    secrets: [ delta_nx_user, delta_nx_pass ]
+    when:
+      branch: main
