@@ -1,6 +1,6 @@
 plugins {
     id("me.idriz.commando.java-conventions")
-    `maven-publish`
+    id("me.idriz.commando.java-deploy")
 }
 
 dependencies {
@@ -16,9 +16,9 @@ val sourcesJar by tasks.registering(Jar::class) {
 
 publishing {
     publications {
-        register<MavenPublication>("mavenJava") {
+        register<MavenPublication>("maven") {
             groupId = project.group.toString()
-            artifactId = rootProject.name
+            artifactId = project.name
             version = project.version.toString()
 
             from(components["java"])
