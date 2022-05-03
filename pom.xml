@@ -39,7 +39,6 @@
   </build>
   <modules>
     <module>commando-core</module>
-    <module>commando-paper</module>
     <module>commando-examples</module>
     <module>commando-discord</module>
   </modules>

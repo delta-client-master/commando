@@ -13,7 +13,6 @@
   <packaging>pom</packaging>
   <modules>
     <module>commando-javacord</module>
-    <module>commando-jda</module>
   </modules>
 
 </project>
