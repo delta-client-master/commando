@@ -2,7 +2,7 @@ pipeline:
   build:
     image: maven:3.8.5-eclipse-temurin-11-alpine
     commands:
-      - mvn -s .m2/settings.xml build
+      - mvn -s .m2/settings.xml package
 
   deploy:
     image: maven:3.8.5-eclipse-temurin-11-alpine
