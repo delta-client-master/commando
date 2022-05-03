@@ -7,5 +7,5 @@ repositories {
 }
 
 group = "me.idriz.commando"
-version = "1.2.5"
+version = "1.2.6"
 java.sourceCompatibility = JavaVersion.VERSION_11
